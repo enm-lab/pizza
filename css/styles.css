@@ -112,3 +112,82 @@ img:hover {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+   
+
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Content*/
+.content {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/*The show class is added to the filtered elements*/
+.show {
+    display: block;
+}
+
+/*Style for the buttons*/
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+/*Button that pops up the buying form*/
+.open-button {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 2px 5px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    position: relative;
+    bottom: 23px;
+    float: right;
+    width: 110px;
+    border-radius: 10px;
+}
