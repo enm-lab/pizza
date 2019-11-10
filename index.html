@@ -52,4 +52,14 @@
                     <option id="pineapple" value="pineapple">Pineapple KES-100</option>
                     <option id="onion" value="onion">Onion KES-50</option>
                 </select>
+                <button class="quantity-input-btn" type="button"
+                    onclick="decrement_quantity('product-quantity-7')">-</button>
+                <input id="product-quantity-7" class="product-quantity" name="product_quantity" value="0">
+                <button type="button" class="quantity-input-btn"
+                    onclick="increment_quantity('product-quantity-7')">+</button>
+                <button type="button" class="btn" onclick="closeForm(); openCheckOut(); addCartPizza();">Add to Cart</button>
+                <button type="button" class="btn buy" onclick="closeForm();addCartPizza();">Add and Order more</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Back</button>
+            </form>
+        </div>
 
