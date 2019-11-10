@@ -8,6 +8,7 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
+
 function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -28,6 +29,8 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
+
+
 //Add active class to the current button(highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
@@ -114,4 +117,3 @@ function Pizzaorder(type,quantity,size,crust,toppings){
 var quantity = $("#product-quantity-" + id).val();
 
 var regularVeggie= new Pizzaorder (800, quantity,  )
-

@@ -62,6 +62,25 @@
                 <button type="button" class="btn cancel" onclick="closeForm()">Back</button>
             </form>
         </div>
+        <div class="form-popup" id="checkout">
+            <form class="form-container">
+                <h2>Checkout</h2>
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" id="name" placeholder="Hey,what's your name?" name="name" required>
+
+                <label for="phone"><b>Phone Number</b></label>
+                <input type="text" placeholder="07XXXXXXXX" name="number" required>
+                <button type="button" class="btn summary">
+                    <p id="summary">Summary</p>
+                </button>
+                <label for="delivery"><b>Delivery Instructions</b></label>
+                <textarea type="text" id="address" placeholder="Where should we deliver?" required></textarea>
+
+                <button type="button" class="btn" onclick="closeCheckOut(); confirmationPopUp();">Checkout</button>
+                <button type="button" class="btn cancel" onclick="closeCheckOut()">Back</button>
+            </form>
+        </div>
         <div id="myBtnContainer">
             <div class="header">
                 <button class="btn active logo" onclick="filterSelection('all')">La Cascina's Pizzas</button>
@@ -75,6 +94,7 @@
             </div>
 
         </div>
+        
         <div class="row">
             <div class="column vegeterian">
                 <div class="content" id="veggie">
@@ -111,6 +131,7 @@
                 </div>
 
             </div>
+
             <div class="column meatLovers">
                 <div class="content" id="supreme">
                     <img src="assets/margherita.jpeg" alt="Veggie" style="width: 100%">
@@ -143,6 +164,8 @@
 
                 </div>
             </div>
+
+
             <div class="column seafood">
                 <div class="content" id="captainPrawn">
                     <img src="assets/seafood.jpg" alt="Veggie" style="width: 100%">
@@ -176,6 +199,8 @@
 
                 </div>
             </div>
+
+
             <div class="column specialty">
                 <div class="content" id="yvetteTantrum">
                     <img src="assets/yvette.jpg" alt="Veggie" style="width: 100%">
@@ -210,6 +235,7 @@
             </div>
             <!--END GRID-->
         </div>
+
         <div class="toppings">
             <h2>CREATE YOUR OWN PIZZA</h2>
 
@@ -231,9 +257,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
