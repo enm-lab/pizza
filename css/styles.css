@@ -40,3 +40,29 @@ body {
       float: none;
     }
   }
+/*Center website*/
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 6vw;
+    word-break: break-all;
+}
+h2{
+    font-size: 4vw;
+}
+p {
+    position: inline;
+}
+.row {
+    margin: 10px -16px;
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
