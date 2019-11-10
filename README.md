@@ -5,7 +5,7 @@
 {The web application provides promotional content about the servicespizza La Cascina's offers. Once a client has customised their pizza, their order is processed and then delivered.}
 
 ## Screenshot
-![Home](pictures/Screenshot.png)
+![Home](assets/Screenshot.png)
 ## Setup/Installation Requirements
 Open https://github.com/enm-lab/pizza. On the top right corner of your screen, you should see a button with the text 'Fork'.
 Clicking on this button should start the process of copying the project/repository to your own account.Click on that button which should result in a modal prompting you to choose the account to which you want to fork.
